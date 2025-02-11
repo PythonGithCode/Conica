@@ -1,134 +1,36 @@
-name: WOKS
-main: woks.woks.WOKS
-api-version: 1.19
-prefix: WOKS
-
-version-stuff:
-  lineCount: &lineCount '7924'
-  update: &update '88'
-  date:
-    day: &day '23'
-    month: &month '6'
-    year: &year '2023'
-
-version: '2023.6.26.u142.lc8112'
-
-commands:
-  savexp:
-    description: Save your xp
-    executor: woks.woks.commands.SaveEXP
-    usage: /savexp
-    aliases:
-      - sxp
-      - spx
-
-  GiveBackPack:
-    description: Give your self a backpack, (this is meant for testing).
-    any:
-      - op
-      - woks.op
-#    aliases: [qclaim, qreward]
-
-
-  CmdGetPerStorage:
-    description: Get your Persistent storage.
-#    permission: op woks.op
-#    aliases: [qclaim, qreward]
-
-  GetExp:
-    description: Get the xp in custom Bottle o' Enchanting
-    aliases:
-      - thisxp
-  #    permission: op woks.op
-#    aliases: [qclaim, qreward]
-
-  TestingPlugin:
-    description: This is just if you want to foul around.
-    permission: op
-#    aliases: [qclaim, qreward]
-
-  setlore:
-    description: Set the lore of an item
-#    permission: op woks.op
-#    aliases: [qclaim, qreward]
-
-  enchanttest:
-    description: To test custom enchants.
-    permission: op
-#    aliases: [qclaim, qreward]
-
-  playerInventory:
-    description: To open a players inventory.
-    permission: op
-#    aliases: [qclaim, qreward]
-
-  EnchantTesting:
-    description: To add unsafe enchants to items.
-    permission: op
-#    aliases: [qclaim, qreward]
-
-  imanadmin:
-    description: Gives eligibility to have admin role in chat.
-    permission: op
-#    aliases: [qclaim, qreward]
-
-  permote:
-    description: Promotes your rank.
-    permission: op
-    aliases:
-      - promote
-
-  pardonall:
-    description: Pardons everyone.
-    permission: op
-    aliases:
-      - pardonfull
-
-  AccessLegacyBackPack:
-    description: Access your backpack with a command.
-    permission: op
-
-  resetquest:
-    description: resetquest for testing. It is just an admin panel type thing, mostly for debugging.
-    permission: op
-    aliases:
-      - questadminpanel
-  #    aliases: [qclaim, qreward]
+name: CORNICA
+main: com.example.CORNICA
+api-version: 1.21
+prefix: CORNICA
 
 
 
-  quest:
-    description: Opens a gui with quests!
-    aliases:
-      - q
-      - smallerversionoftextbutstillalongbitoftestthisusetobelikefivehundredcharslonglol
-#      - whattheduckisaquestihavenotideawhatthisisorhowtouseitjusttellmewhatyouarepleaseitwouldhelpalotyouknowthisisnowpartofthequestthingyouknowrightokthatsgoodmanforrealiwounderifthereisalimitthisremindedsmeofletsgameitouthedoesfunnythingslikethisitsfuntoseeifthereisalimitcusmaybethereismabyerthereisnotforthatistobeknownnedwellidoknowthatyoucantcallthiscommandunlessyouaretheseversoyoumightnotevenknowwhatisthistextsothatissadmaybeidontknowiknowididgobinkforfortysevenminuteswithmyomasothatwasfunwhichiscoolyeahmaybeidolikethezooitisqiukfrogsmellsearwaxqouickosomeshisutomadorarododamesokuduniwakonichiwahellogutantagdasistnichtmeinenameyaorderneindasismeinproblemdasistnichtsogutyadasisproblyderendofthistextfurme
+## I have to remember how to do this again/
 
-  giveQuestPlayer:
-    description: Give player's quests.
-    permission: op
-    aliases:
-      - questgive
-      - givequest
+# commands:
+#   savexp:
+#     description: Save your xp
+#     executor: woks.woks.commands.SaveEXP
+#     usage: /savexp
+#     aliases:
+#       - sxp
+#       - spx
 
-  summonPlane:
-    description: summon a plane to fly!?!?!?
-    permission: op
-
-  pause:
-    description: Stops all in coming packets
-    permission: op
-
-  pauseConfig:
-    description: config the pause command
-    permission: op
-
-  gravitys:
-    description: config the gravity!?!
-    permission: op
+#   GiveBackPack:
+#     description: Give your self a backpack, (this is meant for testing).
+#     any:
+#       - op
+#       - woks.op
+# #    aliases: [qclaim, qreward]
 
 
-permissions:
-  players:
-    ShortPuppy14484:
-      - "woks.op"
+#   CmdGetPerStorage:
+#     description: Get your Persistent storage.
+# #    permission: op woks.op
+# #    aliases: [qclaim, qreward]
+
+
+# permissions:
+#   players:
+#     ShortPuppy14484:
+#       - "woks.op"
